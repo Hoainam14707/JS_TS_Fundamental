@@ -1,3 +1,4 @@
+export {};
 /* 
     - Biến là để lưu trữ một dữ liệu và đối tượng
     - Có 2 loại biến: let/const (vẫn có thể có var nhưng đây là kiểu cũ, không dùng nhiều)
