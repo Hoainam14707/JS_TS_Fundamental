@@ -81,16 +81,52 @@ console.log(student["address"]["country"])
     TS: sẽ không cho thêm trừ khi phải được định nghĩa trước:
 
         let bike: {
-        brand: string;
-        name: string;
-        color?: string;
-        price?: number;
+            brand: string;
+            name: string;
+            color?: string;
+            price?: number;
         } = {
         brand: "Toyota",
         name: "Raize"
         };
 
 */
+
+// phân biệt ":" và. "="
+//: và = có vai trò hoàn toàn khác nhau
+
+// : → nói cho TypeScript biết TYPE
+let car2: {
+    brand: string;
+    model: string;
+    year: number;
+};
+
+// Đọc là:
+// car có kiểu dữ liệu là một object có brand, model, year.
+// Nhưng chưa có object thực tế.
+
+//= → gán VALUE
+let car3 = {
+    brand: "Toyota",
+    model: "Raize",
+    year: 2021
+};
+
+// Đọc là:
+// Tạo một object và gán nó vào car.
+// TypeScript sẽ tự suy luận type.
+
+//Có thể kết hợp cả hai
+let car4: {
+    brand: string;
+    model: string;
+    year: number;
+} = {
+    brand: "Toyota",
+    model: "Raize",
+    year: 2021
+};
 
 
 //Array
